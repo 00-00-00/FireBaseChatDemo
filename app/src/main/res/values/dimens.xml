@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <!-- Default screen margins, per the Android Design guidelines. -->
+  <dimen name="activity_horizontal_margin">16dp</dimen>
+  <dimen name="activity_vertical_margin">16dp</dimen>
+  <dimen name="divider_default">2dp</dimen>
+  <!-- Discreetise dimens so that dimensions fit to the 8p grid mentioned in guidelines -->
+  <dimen name="view_step_1">8dp</dimen>
+  <dimen name="view_step_2">16dp</dimen>
+  <dimen name="view_step_3">24dp</dimen>
+  <dimen name="view_step_4">32dp</dimen>
+  <dimen name="view_step_5">40dp</dimen>
+  <dimen name="view_step_6">48dp</dimen>
+  <dimen name="view_step_7">56dp</dimen>
+  <dimen name="view_step_8">64dp</dimen>
+  <dimen name="view_step_9">72dp</dimen>
+  <dimen name="view_step_10">80dp</dimen>e
+  <dimen name="view_step_16">128dp</dimen>
+
+</resources>
