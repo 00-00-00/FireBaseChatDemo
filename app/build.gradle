@@ -11,6 +11,13 @@ android {
     dataBinding {
       enabled = true
     }
+    packagingOptions {
+      exclude 'META-INF/DEPENDENCIES'
+      exclude 'META-INF/NOTICE'
+      exclude 'META-INF/LICENSE'
+      exclude 'META-INF/LICENSE.txt'
+      exclude 'META-INF/NOTICE.txt'
+    }
     applicationId "com.ground0.firebasechatdemo"
     minSdkVersion 14
     targetSdkVersion 23
@@ -32,7 +39,7 @@ android {
 
   productFlavors {
     dev {
-      buildConfigField 'String', 'FIREBASE_URL', '"https://patient-debug-ed69a.firebaseio.com"'
+      buildConfigField 'String', 'FIREBASE_URL', '"https://fir-chat-demo-eda4a.firebaseio.com/"'
       proguardFile("proguard-rules.pro")
     }
     prod {}
@@ -43,11 +50,13 @@ dependencies {
   compile fileTree(include: ['*.jar'], dir: 'libs')
   compile 'com.firebase:firebase-client-android:2.5.2'
   apt 'com.jakewharton:butterknife-compiler:8.0.1'
-  compile 'com.android.support:appcompat-v7:23.4.0'
-  compile 'com.android.support:support-v4:23.3.0'
-  compile 'com.android.support:cardview-v7:23.3.0'
-  compile 'com.android.support:recyclerview-v7:23.3.0'
-  compile 'com.android.support:design:23.3.0'
+
+  def support_library_version = "24.2.1"
+  compile "com.android.support:appcompat-v7:${support_library_version}"
+  compile "com.android.support:support-v4:${support_library_version}"
+  compile "com.android.support:cardview-v7:${support_library_version}"
+  compile "com.android.support:recyclerview-v7:${support_library_version}"
+  compile "com.android.support:design:${support_library_version}"
   compile 'org.threeten:threetenbp:1.3.1'
   compile 'com.jakewharton:butterknife:8.0.1'
   compile 'io.reactivex:rxandroid:1.2.1'

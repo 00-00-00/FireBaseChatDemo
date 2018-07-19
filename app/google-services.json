@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "372008509175",
+    "firebase_url": "https://fir-chat-demo-eda4a.firebaseio.com",
+    "project_id": "fir-chat-demo-eda4a",
+    "storage_bucket": "fir-chat-demo-eda4a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:372008509175:android:9aa1c305896e8569",
+        "android_client_info": {
+          "package_name": "com.ground0.firebasechatdemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "372008509175-2nh045ddjcq34bh4a7rsn1dffe959ue2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTG_3nOCNVc9vWN-iBtXE0y2mmAQWoMq4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

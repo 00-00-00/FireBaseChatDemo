@@ -8,10 +8,10 @@ import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import com.ground0.firebasechatdemo.R;
 import com.ground0.firebasechatdemo.core.BaseActivity;
 import com.ground0.firebasechatdemo.core.viewModel.ChatActivityViewModel;
 import com.ground0.firebasechatdemo.databinding.ActivityChatBinding;
-import javax.inject.Inject;
 import org.apache.commons.lang3.StringUtils;
 
 /**
@@ -20,9 +20,8 @@ import org.apache.commons.lang3.StringUtils;
 
 public class ChatActivity extends BaseActivity {
 
-  ChatActivityViewModel viewModel;
+  ChatActivityViewModel viewModel = new ChatActivityViewModel();
   ActivityChatBinding activityChatBinding;
-
 
   @Override protected void registerActivityWithViewModel() {
     viewModel.registerActivity(this);

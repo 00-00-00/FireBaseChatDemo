@@ -1,6 +1,8 @@
 package com.ground0.firebasechatdemo.core;
 
 import android.app.Application;
+import com.firebase.client.Firebase;
+import com.ground0.firebasechatdemo.BuildConfig;
 import java.util.Random;
 import rx.subjects.BehaviorSubject;
 
@@ -18,5 +20,10 @@ public class BaseApplication extends Application {
 
   public Long getUserId() {
     return (long) (new Random()).nextInt(1000);
+  }
+
+  @Override public void onCreate() {
+    super.onCreate();
+    Firebase.setAndroidContext(this);
   }
 }
